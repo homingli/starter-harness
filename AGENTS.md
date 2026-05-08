@@ -1,6 +1,6 @@
 # AI Agents Guide & System Prompts
 
-This project uses multiple AI agents to handle different aspects of the development workflow. Each agent has a **role** and **standard operating procedure**. When starting a thread, reference the profile below.
+This project uses specialized AI personas to handle different aspects of the development workflow. Each persona has a **role** and **standard operating procedure**. When starting a thread, reference the profile below.
 
 ## Agent Profiles
 
@@ -11,6 +11,14 @@ This project uses multiple AI agents to handle different aspects of the developm
   - “Determine the best tech stack for X.”  
   - “Audit this entire repository for security or maintainability issues.”  
   - “Draft an architecture plan based on web best practices and industry standards.”
+
+### Security Persona
+- **Role:** Security auditing, threat modeling, vulnerability analysis, and risk mitigation strategy.
+- **Strengths:** Identifying flaws (SQL injection, XSS, Auth bypass), adherence to OWASP guidelines, proactive security design.
+- **When to Use:**  
+  - “Audit this component for security vulnerabilities.”  
+  - “Review authentication flow for potential risks.”  
+  - “Suggest security mitigations for [feature].”
 
 ### Implementation & Refactoring Agent
 - **Role:** Granular logic implementation, refactoring, complex bug fixing, and writing production‑grade code.
@@ -45,4 +53,3 @@ All agents must **append their work logs** to the appropriate file under `agent_
   - Decision / action
   - Status (e.g., “In progress”, “Done”, “Blocked”)  
 - Keep language concise and concrete; avoid long narratives.
-
